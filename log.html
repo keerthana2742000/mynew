@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GitHub API</title>
+
+    <style>
+      #sec2 {
+        display: none;
+      }
+    
+    </style>
+    <!-- Import the Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: pink">
+    <section id="sec1">
+      <h3 class="text-center mt-5">GitHub API</h3>
+      <form id="myform" class="form-inline mx-auto" style="width: 280px">
+        <input
+          id="username"
+          class="form-control mb-5"
+          type="text"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <input
+          id="password"
+          class="form-control mb-5"
+          type="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+
+        <input
+          type="button"
+          value="Login"
+          class="btn btn-primary ml-2 mb-5"
+          id="enter"
+        />
+      </form>
+    </section>
+    <section id="sec2">
+      <h3 class="text-center mt-5">GitHub API</h3>
+      <form id="gitHubForm" class="form-inline mx-auto" style="width: 280px">
+        <input
+          id="usernameInput"
+          class="form-control mb-5"
+          type="text"
+          name="username"
+          placeholder="GitHub Username"
+        />
+        <input type="submit" class="btn btn-primary ml-2 mb-5" value="Submit" />
+      </form>
+    </section>
+    <ul
+      id="userRepos"
+      class="list-group mx-auto mb-5"
+      style="width: 500px"
+    ></ul>
+    <div id="op"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
